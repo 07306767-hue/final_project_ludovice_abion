@@ -1,0 +1,203 @@
+/* GLOBAL BASE STYLES */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0f1a;
+    color: white;
+}
+
+a {
+    color: #00eaff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Navigation */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: linear-gradient(90deg, #0b0f1a, #1e3a8a);
+    border-bottom: 1px solid #1f2937;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.middle {
+    flex: 1;
+    text-align: center;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.brand {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #00eaff, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 8px rgba(0, 234, 255, 0.5);
+    margin: 0;
+}
+
+.middle h2 {
+    font-size: 25px;
+    background: linear-gradient(90deg, #00eaff, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+/* CLASS STUDENTS PAGE SPECIFIC STYLES */
+
+.container_act {
+    max-width: 1350px;
+    margin: 30px auto;
+    padding: 30px;
+    background: rgba(17, 24, 39, 0.8);
+    border: 1px solid #1f2937;
+    border-radius: 12px;
+}
+
+.container_act h2 {
+    background: linear-gradient(90deg, #00eaff, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.dashboard-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: linear-gradient(90deg, #00eaff, #8b5cf6);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 234, 255, 0.3);
+}
+
+.students-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.students-table thead {
+    background: #1a1a1a;
+    border-bottom: 2px solid #0063f8;
+}
+
+.students-table th {
+    padding: 15px;
+    text-align: left;
+    color: #00eaff;
+    font-weight: bold;
+}
+
+.students-table tbody tr {
+    border-bottom: 1px solid #1f2937;
+    transition: background 0.2s ease;
+}
+
+.students-table tbody tr:hover {
+    background: rgba(0, 234, 255, 0.05);
+}
+
+.students-table td {
+    padding: 15px;
+    color: #cbd5e1;
+}
+
+.student-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.view-btn,
+.kick-btn {
+    display: inline-block;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.view-btn {
+    background: #007bff;
+    color: white;
+}
+
+.view-btn:hover {
+    opacity: 0.9;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.kick-btn {
+    background: #dc3545;
+    color: white;
+}
+
+.kick-btn:hover {
+    opacity: 0.9;
+    box-shadow: 0 0 10px rgba(220, 53, 69, 0.5);
+}
+
+.no-students {
+    text-align: center;
+    padding: 40px;
+    color: #cbd5e1;
+}
+
+.error {
+    background: rgba(255, 77, 77, 0.15);
+    border: 1px solid #ff4d4d;
+    color: #ffb3b3;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.success {
+    background: rgba(77, 255, 77, 0.15);
+    border: 1px solid #4dff4d;
+    color: #b3ffb3;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}

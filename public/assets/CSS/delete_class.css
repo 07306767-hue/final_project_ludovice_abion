@@ -1,0 +1,202 @@
+/* GLOBAL BASE STYLES */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0f1a;
+    color: white;
+}
+
+a {
+    color: #00eaff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Navigation */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: linear-gradient(90deg, #0b0f1a, #1e3a8a);
+    border-bottom: 1px solid #1f2937;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.middle {
+    flex: 1;
+    text-align: center;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.brand {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #00eaff, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 8px rgba(0, 234, 255, 0.5);
+    margin: 0;
+}
+
+.middle h2 {
+    font-size: 25px;
+    background: linear-gradient(90deg, #00eaff, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+/* Buttons */
+button,
+.btn,
+.submit-btn,
+.logout {
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+button,
+.btn,
+.submit-btn,
+.logout {
+    background: linear-gradient(90deg, #00eaff, #8b5cf6);
+    color: white;
+}
+
+button:hover,
+.btn:hover,
+.submit-btn:hover,
+.logout:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 234, 255, 0.3);
+}
+
+/* DELETE CLASS PAGE SPECIFIC STYLES */
+
+.container {
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 30px;
+    background: rgba(17, 24, 39, 0.8);
+    border: 1px solid #1f2937;
+    border-radius: 12px;
+}
+
+.container h3 {
+    background: linear-gradient(90deg, #ff6b6b, #ff4757);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.confirmation-message {
+    background: rgba(255, 77, 77, 0.15);
+    border: 1px solid #ff4d4d;
+    color: #ffb3b3;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.confirmation-message p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.class-details {
+    background: #1a1a1a;
+    padding: 20px;
+    border-left: 4px solid #ff4d4d;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+
+.class-details h4 {
+    margin-top: 0;
+    color: #00eaff;
+}
+
+.class-details p {
+    color: #cbd5e1;
+    margin: 5px 0;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.confirm-btn,
+.cancel-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.confirm-btn {
+    background: #dc3545;
+    color: white;
+}
+
+.confirm-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
+}
+
+.cancel-btn {
+    background: #555;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background: #666;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 234, 255, 0.3);
+}
+
+.warning-icon {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 20px;
+}

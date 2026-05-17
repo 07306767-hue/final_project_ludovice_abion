@@ -1,0 +1,14 @@
+CREATE TABLE account(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username,
+    email,
+    password,
+)
+
+CREATE TABLE class (
+    class_id INT AUTO_INCREMENT PRIMARY KEY,
+    subject_name VARCHAR(100),
+    teacher_id INT
+    FOREIGN KEY (id) REFERENCES account(id),
+);
+

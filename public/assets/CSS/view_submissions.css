@@ -1,0 +1,260 @@
+/* GLOBAL BASE STYLES */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0f1a;
+    color: white;
+}
+
+a {
+    color: #00eaff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Navigation */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: linear-gradient(90deg, #0b0f1a, #1e3a8a);
+    border-bottom: 1px solid #1f2937;
+}
+
+.header h2 {
+    font-size: 25px;
+    background: linear-gradient(90deg, #00eaff, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    flex: 1;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: linear-gradient(90deg, #00eaff, #8b5cf6);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 234, 255, 0.3);
+}
+
+/* SUBMISSIONS PAGE STYLES */
+.submissions-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    background: rgba(17, 24, 39, 0.8);
+    border: 1px solid #1f2937;
+    border-radius: 12px;
+}
+
+.activity-info {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #2a2a3e;
+}
+
+.activity-info h3 {
+    color: #00eaff;
+    font-size: 22px;
+    margin: 0 0 15px 0;
+}
+
+.activity-info p {
+    color: #cbd5e1;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.description-text {
+    background: #0f0f1a;
+    border-left: 3px solid #8b5cf6;
+    padding: 15px;
+    border-radius: 4px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.submissions-list h4 {
+    color: #00eaff;
+    font-size: 18px;
+    margin: 0 0 20px 0;
+}
+
+.submission-card {
+    background: #1a1a1a;
+    border: 1px solid #2a2a3e;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.submission-card:hover {
+    border-color: #00eaff;
+    box-shadow: 0 0 15px rgba(0, 234, 255, 0.1);
+}
+
+.submission-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #2a2a3e;
+}
+
+.student-info h5 {
+    margin: 0;
+    color: #00eaff;
+    font-size: 16px;
+}
+
+.student-info .email {
+    color: #8b5cf6;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.student-info .submitted-date {
+    color: #cbd5e1;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.grade-badge {
+    display: flex;
+    align-items: center;
+}
+
+.graded {
+    background: #10b981;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.ungraded {
+    background: #ef4444;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.submission-body {
+    margin-bottom: 20px;
+}
+
+.submission-body h6 {
+    color: #8b5cf6;
+    font-size: 14px;
+    margin: 0 0 10px 0;
+}
+
+.answer-text {
+    background: #0f0f1a;
+    border: 1px solid #2a2a3e;
+    border-radius: 6px;
+    padding: 15px;
+    color: #cbd5e1;
+    font-size: 14px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    word-break: break-word;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.submission-actions {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #2a2a3e;
+}
+
+.grade-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.grade-form input[type="text"] {
+    flex: 1;
+    min-width: 150px;
+    padding: 10px 15px;
+    background: #0f0f1a;
+    border: 1px solid #2a2a3e;
+    color: #00eaff;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.grade-form input[type="text"]:focus {
+    outline: none;
+    border-color: #00eaff;
+    box-shadow: 0 0 8px rgba(0, 234, 255, 0.3);
+}
+
+.grade-form button {
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #00eaff, #8b5cf6);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.grade-form button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 234, 255, 0.3);
+}
+
+.no-submissions {
+    text-align: center;
+    padding: 40px 20px;
+    color: #cbd5e1;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .submissions-container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .submission-header {
+        flex-direction: column;
+    }
+
+    .grade-form {
+        flex-direction: column;
+    }
+
+    .grade-form input[type="text"] {
+        min-width: 100%;
+    }
+}

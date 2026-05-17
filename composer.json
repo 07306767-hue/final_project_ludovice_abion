@@ -1,0 +1,13 @@
+{
+    "name": "billf/bi-pair",
+    "autoload": {
+        "psr-4": {
+            "Billf\\BiPair\\": "src/",
+            "Controllers\\": "src/Controllers/",
+            "Validators\\": "src/Helpers/",
+            "Models\\": "src/models/",
+            "App\\": "src/"
+        }
+    },
+    "require": {}
+}
